@@ -4,7 +4,12 @@ tbody {color:blue;}
 tfoot {color:red;}
 
 table, th, td {
-  border: 1px solid black;
+
+  text-align: center;
+  border: 3px solid black;
+  background-color: #e0dede;
+  margin-left: auto;
+  margin-right: auto;
 }
 td, th{
   padding: 5px;

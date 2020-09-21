@@ -1,0 +1,43 @@
+.App{
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+.filter{
+    margin-left: center;
+    margin-right: center;
+    background-color: aqua;
+    margin-left: 9rem;
+    border: 2px solid black;
+    font-weight: 500;
+    padding: 5px;
+  }
+  .sort{
+    background-color: aqua;
+    margin-left: 9rem;
+    margin-bottom: 2px;
+    border: 2px solid black;
+    font-weight: 500;
+    padding: 5px;
+
+  }
+  .header{
+ width: max-content;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+    border: 3px solid black;
+    background-color: #e0dede;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+  }
+  .input {
+    padding: 5px;
+    background-color: rgb(154, 246, 246);
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Table from './components/Table.jsx';
+import Table from './components/Table/Table.jsx';
+import "./style.css"
 
 
 function App() {
@@ -39,12 +40,16 @@ function App() {
 
   return (
     <div className="App">
-      What's Happening?  Go ahead, sort and filter the list of employees why don't'cha?
-      <br /> Employee List<br />
-
-      <select onChange={(e) => setFieldToSortBy(e.target.value)}>
+      <header className="header">
+      <strong>Employee List</strong><br />
+      <i>What's Happening?  Go ahead, sort and filter the list of employees why don'tcha?</i>
+      
+      </header>
+      <br/>
+      <select className= "sort" onChange={(e) => setFieldToSortBy(e.target.value)}>select field to sort by:
         {
           [
+            { field: "", name: "Sort by:" },
             { field: "id", name: "ID" },
             { field: "name", name: "Name" },
             { field: "occupation", name: "Occupation" },
@@ -52,10 +57,13 @@ function App() {
           ].map(({ field, name }, i) => (<option value={field} key={i}>{name}</option>))
         }
       </select>
-      <select onChange={(e) => setFieldToFilterBy(e.target.value)}>
+     
+      <br/>
+      
+      <select className= "filter" onChange={(e) => setFieldToFilterBy(e.target.value)}>
         {
           [
-            { field: "", name: "None" },
+            { field: "", name: "Filter by:" },
             { field: "id", name: "ID" },
             { field: "name", name: "Name" },
             { field: "occupation", name: "Occupation" },
@@ -63,7 +71,8 @@ function App() {
           ].map(({ field, name }, i) => (<option value={field} key={i}>{name}</option>))
         }
       </select>
-      <input type="text" onChange={(e) => setValueToFilterBy(e.target.value)}></input>
+      
+      <input type="text" className="input" placeholder="Type to filter employees" onChange={(e) => setValueToFilterBy(e.target.value)}></input>
       <Table data={filteredEmployees} />
 
 
@@ -72,3 +81,4 @@ function App() {
   );
 }
 export default App;
+

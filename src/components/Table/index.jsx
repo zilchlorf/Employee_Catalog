@@ -1,8 +1,10 @@
 import React from 'react';
 import employees from "../../Employees.json"
+// import CardImg from "../CardImage";
+
 // import image from "../images/drunk-face.jpeg"
 //Inspired by: https://medium.com/@subalerts/create-dynamic-table-from-json-in-react-js-1a4a7b1146ef
-export default function Table(props) {
+export default function Table(props,{image}) {
   const { data } = props;
   if (!data || !data.length) return <></>;
 
@@ -11,7 +13,7 @@ export default function Table(props) {
     <div>
       <table>
         <thead>
-          <tr>{["ID", "Name", "Occupation", "Location", "image"].map((title, i) => (<th key={i}>{title}</th>))}</tr>
+          <tr>{["ID", "Name", "Occupation", "Location","Phone Number","Email Address"].map((title, i) => (<th key={i}>{title}</th>))}</tr>
         </thead>
         <tbody>
           {
@@ -19,7 +21,8 @@ export default function Table(props) {
               (
                 <tr key={i}>
                   {
-                    ["id", "name", "occupation", "location", "image"].map((field, i) => (<td key={i}>{employee[field]}</td>))
+                    ["id", "name", "occupation", "location","phoneNumber","email"].map((field, i) => (<td key={i}>{employee[field]} </td>))
+
                   }
                 </tr>
               )
@@ -31,6 +34,3 @@ export default function Table(props) {
 
   );
 }
-// {/* <img src={image}></img> */}
-
-{/* <img src={JSON[key].portfolioImage} key={i} /> */ }

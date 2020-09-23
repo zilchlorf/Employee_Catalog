@@ -7,22 +7,22 @@
     margin-left: center;
     margin-right: center;
     background-color: aqua;
-    margin-left: 9rem;
+    margin-left: 18rem;
     border: 2px solid black;
     font-weight: 500;
     padding: 5px;
   }
   .sort{
     background-color: aqua;
-    margin-left: 9rem;
-    margin-bottom: 2px;
+    margin-left: 18rem;
+    margin-bottom: 3px;
     border: 2px solid black;
     font-weight: 500;
     padding: 5px;
 
   }
   .header{
- width: max-content;
+    width: max-content;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     text-align: center;
@@ -40,4 +40,8 @@
     padding-left: 10px;
     margin-left: 5px;
     margin-bottom: 5px;
+  }
+  #title {
+    font-size: 3rem;
+    font-weight: bolder;
   }

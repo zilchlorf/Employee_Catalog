@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Table from './components/Table/Table.jsx';
+import Table from './components/Table/index.jsx';
 import "./style.css"
 
 
@@ -41,8 +41,8 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-      <strong>Employee List</strong><br />
-      <i>What's Happening?  Go ahead, sort and filter the list of employees why don'tcha?</i>
+      <strong id="title">Employee List</strong><br />
+      <i>Sort and filter the list of employees by ID, Name, Occupation, Location, Phone Number or Email Address</i>
       
       </header>
       <br/>
@@ -53,7 +53,10 @@ function App() {
             { field: "id", name: "ID" },
             { field: "name", name: "Name" },
             { field: "occupation", name: "Occupation" },
-            { field: "location", name: "Location" }
+            { field: "location", name: "Location" },
+            { field: "phoneNumber", name: "Phone Number" },
+            { field: "email", name: "Email Address" }
+
           ].map(({ field, name }, i) => (<option value={field} key={i}>{name}</option>))
         }
       </select>
@@ -67,13 +70,15 @@ function App() {
             { field: "id", name: "ID" },
             { field: "name", name: "Name" },
             { field: "occupation", name: "Occupation" },
-            { field: "location", name: "Location" }
+            { field: "location", name: "Location" },
+            { field: "phoneNumber", name: "Phone Number" },
+            { field: "email", name: "Email Address" }
           ].map(({ field, name }, i) => (<option value={field} key={i}>{name}</option>))
         }
       </select>
       
       <input type="text" className="input" placeholder="Type to filter employees" onChange={(e) => setValueToFilterBy(e.target.value)}></input>
-      <Table data={filteredEmployees} />
+      <Table data={filteredEmployees} image={employees.image}/>
 
 
     </div>

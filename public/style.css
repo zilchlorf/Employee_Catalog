@@ -5,11 +5,16 @@ tfoot {color:red;}
 
 table, th, td {
 
+  width: max-content;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
   text-align: center;
   border: 3px solid black;
   background-color: #e0dede;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 td, th{
   padding: 5px;

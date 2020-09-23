@@ -9,6 +9,7 @@ Table of Contents:
 - [tests](#tests)
 - [Questions](#Questions)
 
+![image](https://user-images.githubusercontent.com/63215148/93967651-888bdb00-fd1c-11ea-9c3c-16aad3fb475d.png)
 
 # Project_Description:
 React application displaying a table of employees.  The table can be sorted or filtered by any of the columns of information. 

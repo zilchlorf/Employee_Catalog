@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-      <strong id="title">Employee List</strong><br />
+      <strong id="title">Employee Catalog</strong><br />
       <i>Sort and filter the list of employees by ID, Name, Occupation, Location, Phone Number or Email Address</i>
       
       </header>

@@ -1,7 +1,8 @@
+# Employee_Catalog
+
 Link to live application:
 https://employee-catalog2.herokuapp.com/
 
-# Employee_Catalog
 Table of Contents:
         
 - [Project_Description](#Project_Description)
